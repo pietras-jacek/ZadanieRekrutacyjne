@@ -1,5 +1,7 @@
 package com.rekrutacja.netpc.account.service;
 
-public class SecurityService {
+public interface SecurityService {
+    String findLoggedInUsername();
 
+    void autologin(String username, String password);
 }

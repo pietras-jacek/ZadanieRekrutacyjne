@@ -1,5 +1,9 @@
 package com.rekrutacja.netpc.account.service;
 
-public class UserService {
+import com.rekrutacja.netpc.account.model.User;
 
+public interface UserService {
+    void save(User user);
+
+    User findByUsername(String username);
 }
